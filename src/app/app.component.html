@@ -2,13 +2,18 @@
 
   <div class="card-container">
 
-    <a class="card" target="_blank" rel="noopener" href="javascript:;" (click)="login()">
+    <a *ngIf="!isLoggedIn()" class="card" target="_blank" rel="noopener" href="javascript:;" (click)="login()">
       <span>Conectar ao Autenticator</span>
     </a>
 
-    <h1 *ngIf="isLoggedIn()">Conectado</h1>
+    <a *ngIf="isLoggedIn()" class="card" target="_blank" rel="noopener" href="javascript:;" (click)="logout()">
+      <span>Desconectar</span>
+    </a>
 
   </div>
+
+  <h1 *ngIf="isLoggedIn()">Conectado</h1>
+  <h1 *ngIf="!isLoggedIn()">Desconectado</h1>
 
   <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">
     <title>Gray Clouds Background</title>

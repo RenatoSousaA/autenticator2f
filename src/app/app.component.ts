@@ -21,6 +21,7 @@ export class AppComponent {
   login() {
     this.msalService.loginPopup().subscribe((response: AuthenticationResult) => {
       this.msalService.instance.setActiveAccount(response.account)
+      console.log(response)
     });
   }
 
