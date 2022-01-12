@@ -2,9 +2,11 @@
 
   <div class="card-container">
 
-    <a class="card" target="_blank" rel="noopener" href="javascript:;">
+    <a class="card" target="_blank" rel="noopener" href="javascript:;" (click)="login()">
       <span>Conectar ao Autenticator</span>
     </a>
+
+    <h1 *ngIf="isLoggedIn()">Conectado</h1>
 
   </div>
 
