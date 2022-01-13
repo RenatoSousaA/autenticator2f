@@ -293,3 +293,15 @@
       visibility: hidden;
     }
   }
+
+  .error {
+      color: rgb(190, 0, 0);
+  }
+
+  .success {
+      color: rgb(0, 88, 0);
+  }
+
+  .normal {
+      color: rgb(58, 58, 58);
+  }

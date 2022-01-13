@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MsalModule, MSAL_INSTANCE, MsalService } from '@azure/msal-angular'
 import { IPublicClientApplication, PublicClientApplication } from '@azure/msal-browser';
+import { FormsModule } from '@angular/forms';
 
 export function MSALInstanceFactory(): IPublicClientApplication {
   return new PublicClientApplication({
@@ -22,7 +23,8 @@ export function MSALInstanceFactory(): IPublicClientApplication {
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MsalModule
+    MsalModule,
+    FormsModule
   ],
   providers: [
     {
