@@ -11,7 +11,8 @@ export function MSALInstanceFactory(): IPublicClientApplication {
   return new PublicClientApplication({
     auth: {
       clientId: '0f7ca74b-0823-4e59-b875-04367fafd408',
-      redirectUri: 'https://autentication-app-2f.herokuapp.com'
+      // redirectUri: 'https://autentication-app-2f.herokuapp.com'
+      redirectUri: 'http://localhost:4200'
     }
   })
 }

@@ -1,6 +1,10 @@
 <div class="content" role="main">
 
   <div class="card-container">
+    <h2>Login</h2>
+  </div>
+
+  <div class="card-container">
       <form class="form" style="margin-right: 10px;">
           <input type="text" class="form-control" [(ngModel)]="user" [ngModelOptions]="{ standalone: true }">
       </form>
@@ -10,7 +14,7 @@
       </form>
   </div>
 
-  <div class="card-container">
+  <div class="card-container" style="margin-bottom: 50px;">
 
     <a *ngIf="!isLoggedIn()" class="card" rel="noopener" href="javascript:;" (click)="login()">
       <span>Conectar ao Autenticator</span>
